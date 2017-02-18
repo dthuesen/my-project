@@ -1,0 +1,22 @@
+<div class="app-component"><p class="p-app-component">app-component</p>
+
+  <div class="container"> 
+    <h1>
+      <div>
+        Der Blog
+      </div>
+    </h1>
+
+    <!--<dt-blog-form (entryCreated)="entries.push($event)"></dt-blog-form>-->
+    <dt-blog-form (entryCreated)="entries.unshift($event)"></dt-blog-form>
+    
+    <dt-blog-list [entries]="entries"></dt-blog-list>
+    
+    <dt-calendar></dt-calendar>
+    
+    
+    
+  </div>
+
+</div>
+

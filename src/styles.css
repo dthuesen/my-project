@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+
+.blog-form-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: yellowgreen !important;
+  border-width: 5px !important;
+  border-style: solid;
+}
+.p-blog-form-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: yellowgreen;
+  color: white;
+  text-align: right;
+}
+
+.blog-entry-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: green;
+  border-width: 5px;
+  border-style: solid;
+}
+.p-blog-entry-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: green;
+  color: white;
+  text-align: right;
+}
+.blog-entry-placeholder-space {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: green;
+  border-width: 5px;
+  border-style: dashed;
+  min-width: 100px !important;
+  min-height: 10px !important;
+}
+.p-blog-entry-placeholder-space {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: green;
+  color: white;
+  text-align: right;
+}
+
+.blog-list-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: darkorange;
+  border-width: 5px;
+  border-style: solid;
+}
+.p-blog-list-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: darkorange;
+  color: white;
+  text-align: right;
+}
+
+.calendar-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: cornflowerblue;
+  border-width: 5px;
+  border-style: solid;
+}
+.p-calendar-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: right;
+}
+
+.time-picker-component {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: blueviolet;
+  border-width: 5px;
+  border-style: solid;
+}
+.p-time-picker-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: blueviolet;
+  color: white;
+  text-align: right;
+}
+
+.app-component {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 55px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-color: darkred;
+  border-width: 5px;
+  border-style: solid;
+}
+.p-app-component {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 5px;
+  background-color: darkred;
+  color: white;
+  text-align: right;
+}
+.blogentry {
+  font-family: fantasy;
+  font-size: 1em;
+  color: black;
+  margin-bottom: 1em;
+}
+.bottom-line {
+  margin: 0 15px 20px 15px;
+  border-bottom: 1px lightgray solid;
+}
+
+img {
+  margin-bottom: 10px;
+  max-width: 170px;
+}

@@ -1,0 +1,8 @@
+<div class="blog-list-component"> <p class="p-blog-list-component">blog-list-component</p>
+  <div *ngIf="!entries"  class="blog-entry-placeholder-space"> <p class="p-blog-entry-placeholder-space">blog-entry-placeholder-space</p>
+  </div>
+  <div *ngIf="entries">
+    <dt-blog-entry  [entries]="entries" ></dt-blog-entry>
+  </div>
+  
+</div>

@@ -1,0 +1,27 @@
+<div class="blog-entry-component"> 
+  <p class="p-blog-entry-component">blog-entry-component</p>
+  <p>Anzahl Einträge: {{ entries.length }}</p>
+    <div *ngFor="let entry of entries; let i = index">
+      
+      <div class="row blogentry">
+      
+      <div class="col-sm-offset-1 col-sm-3" #entryVar{{i}}>
+        <p>entry index: {{i}} - entry: {{entries.length - i}}</p>
+        <img [src]="entry?.image" [alt]="entry?.title" class="img-rounded">
+      </div>
+      
+      <div class="col-sm-6">
+        <h4>{{entry?.title}}</h4>
+        <p>{{entry?.text}}</p>
+      </div>
+      
+      
+    </div>
+    
+    <div *ngIf="i + 1 < entries.length" class="bottom-line">
+    </div>
+    
+  </div>
+  
+</div>
+

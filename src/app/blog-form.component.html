@@ -1,0 +1,57 @@
+<div class="blog-form-component"> <p class="p-blog-form-component">blog-form-component</p>
+  <form>
+      <div class="form-group">
+        <label for="title">Titel:</label>
+        <input class="form-control" 
+               type="text" 
+               id="title" 
+               #title 
+               name="titleField"
+               [(ngModel)]="titleField"
+               (keydown.enter)="image.focus(); $event.preventDefault()"
+               (keydown.tab)="image.focus(); $event.preventDefault()"
+               (keydown.shift.tab)="text.focus(); $event.preventDefault()"
+               (focus)="$event.target.select()"
+        >
+      </div>
+      
+      <!--[(ngModel)]="titleField"-->
+      
+      <div class="form-group">
+        <label for="image">Bild-URL:</label>
+        <input class="form-control" 
+               type="text" 
+               id="image" 
+               #image 
+               name="imageField" 
+               [(ngModel)]="imageField"
+               (keydown.enter)="text.focus(); $event.preventDefault()"
+               (keydown.tab)="text.focus(); $event.preventDefault()"
+               (keydown.shift.tab)="title.focus(); $event.preventDefault()"
+               (focus)="$event.target.select()"
+        >
+      </div>
+      
+      <div class="form-group">
+        <label for="text">Text:</label>
+        <textarea class="form-control" 
+                  id="text" 
+                  rows="3" 
+                  cols="20" 
+                  #text 
+                  name="textField" 
+                  [(ngModel)]="textField"
+                  (keydown.enter)="title.focus(); $event.preventDefault()"
+                  (keydown.tab)="title.focus(); $event.preventDefault()"
+                  (keydown.shift.tab)="image.focus(); $event.preventDefault()"
+                  (focus)="$event.target.select()"
+        ></textarea>
+      </div>
+      
+      <button class="btn btn-default" 
+              (click)="createBlogEntry(title.value, image.value, text.value); title.focus(); $event.preventDefault()"  
+              (keydown.enter)="title.focus(); $event.preventDefault()"
+      >Blog-Eintrag anlegen</button>
+  </form>
+</div>
+

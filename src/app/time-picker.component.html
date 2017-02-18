@@ -1,0 +1,93 @@
+<div class="time-picker-component"><p class="p-time-picker-component">time-picker-component</p>
+  <h1>Timepicker</h1>
+  <h3>Gesetzte Zeit: {{time.hours}} : {{time.minutes}} : {{time.seconds}}</h3>
+  <form>
+      <div class="row">
+        <div class="col-sm-2">
+          <button (click)="incrementTime('hours')" class="btn btn-block">+1 Std</button>
+        </div>
+        <div class="col-sm-2">
+          <button (click)="incrementTime('minutes')" class="btn btn-block">+1 Min</button>
+        </div>
+        <div class="col-sm-2">
+          <button (click)="incrementTime('seconds')" class="btn btn-block">+1 Sek</button>
+        </div>
+      </div>
+      
+      
+
+      <div class="form-group">
+        <div class="row">
+            
+          <div class="col-sm-2 ">
+            <label for="hours">h:</label>
+            <input [(ngModel)]="time.hours" 
+                    name="hours"
+                    (change)="changeTime('hours', $event.target.value)" 
+                    (keydown.arrowup)="incrementTime('hours'); $event.preventDefault()" 
+                    (keydown.arrowdown)="decrementTime('hours'); $event.preventDefault()" 
+                    (keydown.enter)="minutes.focus(); $event.preventDefault()" 
+                    (focus)="$event.target.select()"
+                    class="form-control " 
+                    type="text" 
+                    id="hours" 
+                    ref-hours 
+                    (keydown.tab)="minutes.focus(); $event.preventDefault()"
+                    (keydown.shift.tab)="seconds.focus(); $event.preventDefault()"
+            />
+          </div>
+
+          <div class="col-sm-2 ">
+            <label for="minutes">m:</label>
+            <input [(ngModel)]="time.minutes" 
+                  name="minutes" 
+                  (change)="changeTime('minutes', $event.target.value)" 
+                  (keydown.arrowup)="incrementTime('minutes'); $event.preventDefault()" 
+                  (keydown.arrowdown)="decrementTime('minutes'); $event.preventDefault()"  
+                  (keydown.enter)="seconds.focus(); $event.preventDefault()"
+                  (focus)="$event.target.select()"
+                  class="form-control" 
+                  type="text" 
+                  id="minutes" 
+                  #minutes 
+                  (keydown.tab)="seconds.focus(); $event.preventDefault()"
+                  (keydown.shift.tab)="hours.focus(); $event.preventDefault()"
+            />
+          </div>
+
+          <div class="col-sm-2">
+            <label for="seconds">s:</label>
+            <input [(ngModel)]="time.seconds" 
+                  name="seconds" 
+                  (change)="changeTime('seconds', $event.target.value)"  
+                  (keydown.arrowup)="incrementTime('seconds'); $event.preventDefault()" 
+                  (keydown.arrowdown)="decrementTime('seconds'); $event.preventDefault()"
+                  (keydown.enter)="hours.focus(); $event.preventDefault()"
+                  (focus)="$event.target.select()"
+                  class="form-control" 
+                  type="text" 
+                  id="seconds" 
+                  #seconds 
+                  (keydown.tab)="hours.focus(); $event.preventDefault()"
+                  (keydown.shift.tab)="minutes.focus(); $event.preventDefault()"
+            />
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-sm-2">
+          <button (click)="decrementTime('hours')" class="btn btn-block">-1 Std</button>
+        </div>
+        <div class="col-sm-2">
+          <button (click)="decrementTime('minutes')" class="btn btn-block">-1 Min</button>
+        </div>
+        <div class="col-sm-2">
+          <button (click)="decrementTime('seconds')" class="btn btn-block">-1 Sek</button>
+        </div>
+      </div>
+      
+      
+  </form>
+</div>

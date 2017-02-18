@@ -1,0 +1,7 @@
+<div class="calendar-component"> <p class="p-calendar-component">calendar-component</p>
+  
+  <dt-time-picker #timepicker [time]="calendarEntry.startTime" (timeChange)="onTimeChanged($event)"></dt-time-picker>
+  
+  <button (click)="timepicker.reset()">Zeit zurücksetzen</button>
+</div>
+
